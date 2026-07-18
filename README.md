@@ -10,7 +10,7 @@ Parallel, FLGISA-only recreation of the existing camera and hero wall.
 
 ## Isolation guarantee
 
-This repository was built separately. No files in `Phoneguy94/0924` were modified.
+This repository was built separately. No files in the existing live source repository were modified.
 
 ## Current compatibility mode
 
@@ -22,4 +22,8 @@ The first version deliberately uses the existing production dependencies for lik
 - Existing claim and QR destination flow
 - Existing `Kiosk-FLGISA-<City or County>` EventName pattern
 
-See `docs/MIGRATION-CHECKLIST.md` for the Airtable, Webex Connect, security, consent, and eventual Veytec cutover work.
+## Final Veytec handoff rule
+
+The production repository and deployed site must contain zero references to the current personal GitHub account or legacy project path. Run `node tools/check-legacy-references.js` before handoff; it must pass with no findings.
+
+See `docs/MIGRATION-CHECKLIST.md` and `docs/LEGACY-DEPENDENCY-AUDIT.md` for Airtable, Webex Connect, security, consent, dependency removal, and Veytec cutover work.
